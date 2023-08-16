@@ -5,30 +5,18 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour
 {
-    public Material originalMat, hightlightMat;
     public Transform player;
     private float speed = 0.05f;
     private bool isCollected = false;
 
     private void Start()
     {
-        gameObject.GetComponent<Renderer>().material = originalMat;
-    }
 
-    private void OnMouseEnter()
-    {
-        gameObject.GetComponent<Renderer>().material = hightlightMat;
-    }
-
-    private void OnMouseExit() 
-    {
-        gameObject.GetComponent<Renderer>().material = originalMat;
     }
 
     private void OnMouseDown()
     {
         isCollected = true;
-        gameObject.GetComponent<Renderer>().material = originalMat;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,6 +26,7 @@ public class Trash : MonoBehaviour
 
     private void Update()
     {
+        gameObject.transform.RotateAround(transform.position, Vector3.up, 100 * Time.deltaTime);
         MoveToPlayer();
     }
 

@@ -2,11 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     string trashTag;
-    int trashType, score;
+    public int trashType, playerScore;
+    public TrashColletor trashColletor;
+    int currentLevel;
+    public GameObject nextLevel, tryAgain;
+
+    private void Start()
+    {
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
+        nextLevel.SetActive(false);
+        tryAgain.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider trash)
     {
         trashTag = trash.tag;
@@ -41,11 +54,33 @@ public class GameManager : MonoBehaviour
 
     private void AddScore() 
     {
-        if (trashType == gameObject.GetComponent<TrashColletor>().selection)         
-            score += 10;        
+        if (trashType == trashColletor.selection)         
+            playerScore += 10;        
         else 
-            score -= 10;
+            playerScore -= 10;
 
-        print (score);
+        print (playerScore);
+    }
+
+    public void CheckScore() 
+    {      
+        
+            if (playerScore >= 80)
+            {
+            if (currentLevel < 3)
+            {
+                nextLevel.SetActive(true);
+                tryAgain.SetActive(false);
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+            }
+            else if (playerScore < 80)
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                nextLevel.SetActive(false);
+                tryAgain.SetActive(true);
+            }
+        }                     
     }
 }

@@ -8,6 +8,7 @@ using UnityEngine.XR;
 public class PlayerCam : MonoBehaviour
 {
     float rotX, rotY, rotSpeed;
+    public Transform direction;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,6 @@ public class PlayerCam : MonoBehaviour
         rotX = Mathf.Clamp(rotX, -90f, 90f);
 
         transform.rotation = Quaternion.Euler(rotX, rotY, 0);
+        direction.rotation = Quaternion.Euler(rotX, rotY, 0);
     }
 }
