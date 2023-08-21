@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 30555
+  controlID: 123
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 30556
+  controlID: 124
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 30557
+  controlID: 125
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 297
     height: 646
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -241,8 +241,8 @@ MonoBehaviour:
     y: 0
     width: 1197
     height: 646
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -339,7 +339,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fe1dfbffa21efbff1824fbff602cfbffe42dfbff682ffbfff430fbff9632fbff2e35fbfff63efbff0044fbffd045fbffd247fbff3448fbffbc49fbff844dfbffa64dfbff4083fbffe483fbff5693fbffa894fbff0aa3fbff2ca7fbffd0a7fbff06bffbff62c1fbffc8c3fbffbcc8fbff1acbfbff0ecffbff66d2fbff7ad5fbff50f8fbffb0fefbfff4fffbff3801fcff7c02fcfff40cfcff440efcff041bfcffd224fcff7425fcffb826fcff7446fcffb256fdffc456fdff58cbfdff00d2fdffdec1feff7ed3feff32fbffff5c5700008c570000086002009e8b0200c08b0200da8b0200
+      m_ExpandedIDs: caf1ffff1af2ffff8af4ffffe0f5ffff36f7ffff40f7ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -622,9 +622,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 465.16562, y: 240.68384, z: 0}
+    m_Target: {x: 536, y: 300.1, z: 0}
     speed: 2
-    m_Value: {x: 135.9783, y: 99.9957, z: 0}
+    m_Value: {x: 536, y: 300.1, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -675,9 +675,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 303.68054
+    m_Target: 617.89905
     speed: 2
-    m_Value: 141.17429
+    m_Value: 617.89905
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -837,22 +837,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/UI
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/UI
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Thicg\OneDrive\Documents\PROJETOS\REcycle\REcycle
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a8c0200
-    m_LastClickedID: 166970
-    m_ExpandedIDs: 000000002058000000ca9a3bffffff7f
+    m_SelectedIDs: 3a5d0000
+    m_LastClickedID: 23866
+    m_ExpandedIDs: 000000002c5d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -880,7 +880,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002058000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000002c5d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

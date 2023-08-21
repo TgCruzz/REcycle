@@ -15,12 +15,4 @@ public class Path : MonoBehaviour
 
         return Vector3.Lerp(posA, posB, speed);
     }
-
-    private void OnDrawGizmos()
-    {
-        for (int i = 0; i < waypoints.Length - 1; i++)
-        {
-            Handles.DrawDottedLine(waypoints[i].transform.position, waypoints[i + 1].transform.position, 1f);
-        }
-    }
 }

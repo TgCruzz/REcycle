@@ -65,9 +65,9 @@ public class GameManager : MonoBehaviour
     public void CheckScore() 
     {      
         
-            if (playerScore >= 80)
-            {
             if (currentLevel < 3)
+            {
+            if (playerScore >= 80)
             {
                 nextLevel.SetActive(true);
                 tryAgain.SetActive(false);

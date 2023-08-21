@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class PlayerCam : MonoBehaviour
 {
@@ -13,7 +8,7 @@ public class PlayerCam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rotSpeed = 1000f;
+        rotSpeed = 100f;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
